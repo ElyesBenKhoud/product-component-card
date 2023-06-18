@@ -1,0 +1,120 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:hsl(30, 38%, 92%);
+    @media (max-width: 375px) {
+        .container {
+          flex-direction: column;
+        }
+        
+        .left {
+          flex-direction: column;
+          align-items: flex-start;
+      
+        }
+        .right {
+          padding: 20px;
+        }
+        .left-img {
+            display: none;
+          }
+          
+          .left-img-mobile {
+            display: block; 
+            width: 100%; 
+            height: auto;
+            border-radius: 3% 0 0 3%;
+          }
+      }
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 3%;
+    max-width: 45rem;
+  }
+
+.left{
+    display: flex;
+    flex-shrink: 0; /* Prevents the left side from shrinking */
+    align-items: center; /* Vertically centers the image */
+    overflow: hidden; /* Hides any overflow beyond the container */
+}
+.left-img-mobile {
+    display: none;
+}
+
+.left-img{
+    width: 20rem; /* Ensures the image fills the entire width of the left container */
+    height: auto; 
+    border-radius: 3% 0 0 3%;
+  }
+
+.right{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px;
+    gap: 28px;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  .title{
+font-family: 'Fraunces', sans-serif;
+letter-spacing: 3px;
+color: rgb(114, 114, 114);
+  }
+
+  .header{
+font-family: 'Fraunces', sans-serif;
+width: 200px;
+font-size: x-large;
+font-weight: 800;
+
+  }
+  .description{
+    font-family: 'Montserrat', sans-serif;
+letter-spacing: 1px;
+line-height: 20px;
+color: rgb(114, 114, 114);
+  }
+
+  .price{
+    display: flex;
+    flex-direction: row;
+    gap: 28px;
+    font-family: 'Fraunces', sans-serif;
+  }
+
+  .price-right{
+    text-decoration: line-through;
+    color: rgb(114, 114, 114);
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .price-left{
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+    margin-top: -8px;
+  }
+
+  .button{
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    font-family: 'Fraunces', sans-serif;
+    font-size: 18px;
+  }
