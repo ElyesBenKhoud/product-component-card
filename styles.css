@@ -1,61 +1,64 @@
-
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color:hsl(30, 38%, 92%);
-    @media (max-width: 375px) {
+    background-color: hsl(30, 38%, 92%);
+
+    @media (max-width: 775px) {
         .container {
-          flex-direction: column;
+            flex-direction: column;
         }
-        
+
         .left {
-          flex-direction: column;
-          align-items: flex-start;
-      
+            flex-direction: column;
+            align-items: flex-start;
+
         }
+
         .right {
-          padding: 20px;
+            padding: 20px;
         }
+
         .left-img {
             display: none;
-          }
-          
-          .left-img-mobile {
-            display: block; 
-            width: 100%; 
+        }
+
+        .left-img-mobile {
+            display: block;
+            width: 100%;
             height: auto;
             border-radius: 3% 3% 0 0;
-          }
-      }
-  }
-  
-  .container {
+        }
+    }
+}
+
+.container {
     display: flex;
     flex-direction: row;
     background-color: white;
     border-radius: 3%;
-    max-width: 45rem;
-  }
-
-.left{
-    display: flex;
-    flex-shrink: 0; 
-    align-items: center;
-    overflow: hidden; 
+    max-width: 40rem;
 }
+
+.left {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    overflow: hidden;
+}
+
 .left-img-mobile {
     display: none;
 }
 
-.left-img{
+.left-img {
     width: 20rem;
-    height: auto; 
+    height: auto;
     border-radius: 3% 0 0 3%;
-  }
+}
 
-.right{
+.right {
     display: flex;
     flex-direction: column;
     padding: 40px 40px;
@@ -63,53 +66,60 @@ body {
 }
 
 .attribution {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
     font-size: 11px;
     text-align: center;
-  }
-  .attribution a {
+}
+
+.attribution a {
     color: hsl(228, 45%, 44%);
-  }
+}
 
-  .title{
-font-family: 'Fraunces', sans-serif;
-letter-spacing: 3px;
-color: rgb(114, 114, 114);
-  }
+.title {
+    font-family: 'Fraunces', sans-serif;
+    letter-spacing: 3px;
+    color: rgb(114, 114, 114);
+}
 
-  .header{
-font-family: 'Fraunces', sans-serif;
-width: 200px;
-font-size: x-large;
-font-weight: 800;
+.header {
+    font-family: 'Fraunces', sans-serif;
+    width: 200px;
+    font-size: x-large;
+    font-weight: 800;
 
-  }
-  .description{
+}
+
+.description {
     font-family: 'Montserrat', sans-serif;
-letter-spacing: 1px;
-line-height: 20px;
-color: rgb(114, 114, 114);
-  }
+    letter-spacing: 1px;
+    line-height: 20px;
+    color: rgb(114, 114, 114);
+}
 
-  .price{
+.price {
     display: flex;
     flex-direction: row;
     gap: 28px;
     font-family: 'Fraunces', sans-serif;
-  }
+}
 
-  .price-right{
+.price-right {
     text-decoration: line-through;
     color: rgb(114, 114, 114);
     font-family: 'Montserrat', sans-serif;
-  }
+}
 
-  .price-left{
+.price-left {
     color: hsl(158, 36%, 37%);
     font-size: 30px;
     margin-top: -8px;
-  }
+}
 
-  .button{
+.button {
     background-color: hsl(158, 36%, 37%);
     color: white;
     height: 40px;
@@ -117,4 +127,4 @@ color: rgb(114, 114, 114);
     border-radius: 10px;
     font-family: 'Fraunces', sans-serif;
     font-size: 18px;
-  }
+}
